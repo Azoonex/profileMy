@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, theme } from '@chakra-ui/react'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/Footer'
 
@@ -18,10 +18,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className='relative overflow-hidden '>
             <ChakraProvider>
                 <Navbar />
-                <body className={inter.className}>
+                <body className={inter.className} >
                     {children}
                 </body>
                 <Footer />

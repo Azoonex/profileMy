@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* START: GENRAL STYLE */
+
 @layer base{
   h2{
     font-size: 38px;
@@ -25,4 +28,17 @@
   .cation{
     font-size: 12px;
   }
+
+  .centeritems{
+    @apply flex item-center justify-center
+  }
 }
+
+.bg__app{
+background: rgb(153,7,164);
+background: radial-gradient(circle, rgba(153,7,164,1) 9%, rgb(28, 7, 188) 30%, rgba(4,5,4,1) 100%,rgb(9, 7, 134) 70%);
+}
+
+
+/* END: GENRAL STYLE */
+
