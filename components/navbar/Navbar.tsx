@@ -7,8 +7,8 @@ import { Sildbar, NavLink } from "./Sildbar";
 
 function Navbar() {
   return (
-    <header className="relative  w-full">
-      <div className={`absolute z-10  shadow-lg rounded-md mt-5 flex justify-between items-center max-w-4xl lg:max-w-6xl mx-auto`}>
+    <header className="absolute top-0 w-full">
+      <div className={`relative z-10  shadow-lg rounded-md mt-5 flex justify-between items-center max-w-4xl lg:max-w-6xl mx-auto`}>
 
         {/* logo */}
         <div className="">

@@ -90,7 +90,7 @@ export const NavLink:React.FC =()=>{
             {
                 NAV_LINKS.map((item)=>(
                     <Link
-                        className='text-black font-bold hover:text-white 
+                        className='text-white font-bold hover:text-white 
                                         duration-100
                                         hover:bg-blue-70 p-2 rounded-md'
                     key={item.key}  href={item.href}>
