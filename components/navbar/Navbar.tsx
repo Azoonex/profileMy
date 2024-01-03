@@ -8,11 +8,13 @@ import { Sildbar, NavLink } from "./Sildbar";
 function Navbar() {
   return (
     <header className="absolute top-0 w-full">
-      <div className={`relative z-10  shadow-lg rounded-md mt-5 flex justify-between items-center max-w-4xl lg:max-w-6xl mx-auto`}>
+      <div className={`relative z-10  shadow-lg rounded-md mt-5
+       flex justify-between items-center max-w-4xl lg:max-w-6xl mx-auto`}>
 
         {/* logo */}
         <div className="">
           <Image
+            alt="noting find"
             src='/logo.jpg'
             width={50}
             height={50}
@@ -35,8 +37,7 @@ function Navbar() {
         </div>
 
         {/* soils */}
-        <div className=" static lg:hidden
-          ">
+        <div className=" static lg:hidden">
           <Sildbar />
         </div>
       </div>

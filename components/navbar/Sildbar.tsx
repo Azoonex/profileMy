@@ -48,19 +48,16 @@ export  function Sildbar() {
                         <ul className='flex   flex-col gap-2 my-5'>
                             {
                                 NAV_LINKS.map((item) => (
-                                    <motion.div
-                                    inherit={{x: -100}}
-                                    animate={{x: 0}}
-                                    >
+                                    <div key={item.id}>
                                         <Link
-                                            className='text-black  hover:text-white 
+                                        className='text-black  hover:text-white 
                                         duration-100
                                         hover:bg-blue-70 p-2 rounded-md '
-                                            key={item.key} href={item.href}>
+                                        href={item.href}>
                                             {item.label}
                                         </Link>
 
-                                    </motion.div>
+                                    </div>
                                 ))
                             }
                         </ul>
@@ -76,6 +73,9 @@ export  function Sildbar() {
                     </DrawerBody>
 
                     <DrawerFooter>
+                        <h2>
+                            hello world
+                        </h2>
                     </DrawerFooter>
                 </DrawerContent>
             </Drawer>
@@ -90,10 +90,11 @@ export const NavLink:React.FC =()=>{
             {
                 NAV_LINKS.map((item)=>(
                     <Link
+                    key={item.id}
                         className='text-white font-bold hover:text-white 
                                         duration-100
                                         hover:bg-blue-70 p-2 rounded-md'
-                    key={item.key}  href={item.href}>
+                    href={item.href}>
                     {item.label}
                      </Link>
                 ))

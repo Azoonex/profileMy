@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
-    { href: "/", key: "home", label: "Home" },
-    { href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
-    { href: "/", key: "services", label: "Services" },
-    { href: "/", key: "pricing ", label: "Pricing " },
-    { href: "/", key: "contact_us", label: "Contact Us" },
+    { id:1,href: "/", key: "home", label: "Home" },
+    { id:2,href: "/", key: "how_hilink_work", label: "How Hilink Work?" },
+    { id:3,href: "/", key: "services", label: "Services" },
+    { id:4,href: "/", key: "pricing ", label: "Pricing " },
+    { id:5,href: "/", key: "contact_us", label: "Contact Us" },
 ];

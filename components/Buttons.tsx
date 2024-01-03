@@ -1,4 +1,5 @@
-import { Button, ButtonGroup } from '@chakra-ui/react'
+"use clinet"
+import { Button} from '@chakra-ui/react'
 
 import TypeButtonProps  from '@/types/type'
 

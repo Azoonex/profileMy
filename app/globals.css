@@ -40,5 +40,9 @@ background: radial-gradient(circle, rgba(153,7,164,1) 9%, rgb(28, 7, 188) 30%, r
 }
 
 
+.shadow-text{
+  text-shadow: #fff 1px 0 4px;
+}
+
 /* END: GENRAL STYLE */
 
