@@ -7,22 +7,27 @@ import { isDeepStrictEqual } from "util"
 
 function Hero() {
   return (
-    <section className=' w-full relative mt-20  lg:max-w-5xl mx-auto  h-[100vh] flex items-center'>
+    <section className=' w-full relative overflow-hidden mt-20  lg:max-w-5xl mx-auto  h-[100vh] flex items-center'>
 
 
       <div className=" ml-5  flex-1">
-        <h2 className="text-white uppercase  ">
-          Crafting Experiences <span className="mx-1 text-red-500  shadow-text font-bold ">
+        <h2 className="text-white  leading-relaxed ">
+          Crafting Experiences <span className=" text-red-500  shadow-text font-bold ">
             Through
             </span> Code Front-end Wizard at Work
           <span className="mx-1 text-red-600 font-bold shadow-text">Coding artisan</span>!!
         </h2>
-       <div className="mt-4 ">
-            <Buttons
-              lable="CONECT_MY"
-              fase="white"
-              bgc="cyan.300"
-            />
+        <div className="mt-4 flex items-center  gap-3">
+            
+            <h4 className="text-white bg-transparent
+            border-2 border-white p-1 uppercase">
+              front-end Developr
+            </h4>
+          <Buttons
+            lable="CONECT_MY"
+            fase="white"
+            bgc="cyan.300"
+          />
        </div>
 
        </div>
