@@ -14,7 +14,7 @@ export default function Post ({posts}:any) {
 
 export async function getStaticPaths() {
     const posts = await loadPosts()
-    const paths = posts.map((post:any)=>({
+    const paths = await posts.map((post:any)=>({
          params: { slug: post.id } 
     }))
     return{
