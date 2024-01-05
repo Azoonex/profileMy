@@ -3,11 +3,11 @@
 import Buttons from "./Buttons"
 import Image from "next/image"
 import {motion} from 'framer-motion'
-import { isDeepStrictEqual } from "util"
+
 
 function Hero() {
   return (
-    <section className=' w-full relative overflow-hidden mt-20  lg:max-w-5xl mx-auto  h-[100vh] flex items-center'>
+    <section className=' w-full relative overflow-hidden mt-20  lg:max-w-6xl mx-auto  h-[100vh] flex items-center'>
 
 
       <div className=" ml-5  flex-1">
@@ -35,15 +35,15 @@ function Hero() {
         <Image
         alt="noting find"
         src="/hero.png"
-        width={500}
-        height={500}
+        width={700}
+        height={700}
         />
        </div>
       <motion.h2
         initial={{ x: 2000,opacity:1 }}
         animate={{ x: -7000,opacity:0 }}
         transition={{ duration: 40, delay: 3 }}
-        className="absolute text-[100px] text-current drop-shadow-[0_1.2px_1.2px_rgba(250,250,250)] font-bold bottom-0 w-[10000px]">
+        className="absolute text-[150px] opacity-60 text-current drop-shadow-[0_1.2px_1.2px_rgba(250,250,250)] font-bold bottom-0 w-[10000px]">
         Transforming ideas into captivating user interfaces. Passionate about crafting seamless experiences that blend innovation and elegance
       </motion.h2>
     </section>

@@ -6,7 +6,7 @@ import { useRef } from 'react';
 
 const Guide = ({ type }:any) => {
     
-    const ref = useRef()
+    const ref = useRef <HTMLInputElement>(null)
     const {scrollYProgress} = useScroll({
         target:ref,
         offset:["start start","end start"]
@@ -25,7 +25,7 @@ const Guide = ({ type }:any) => {
                 <motion.h2
                 style={{y:yText}}
                 className=" absolute text-6xl text-white font-mono font-bold">
-                    {type === "content" ? "who we do ?" : "what we DiD ?"}
+                    {type === "content" ? "what we do ?" : "what we DiD ?"}
                 </motion.h2>
 
                 <motion.div
