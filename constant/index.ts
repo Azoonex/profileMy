@@ -5,3 +5,16 @@ export const NAV_LINKS = [
     { id:4,href: "/", key: "pricing ", label: "Pricing " },
     { id:5,href: "/", key: "contact_us", label: "Contact Us" },
 ];
+
+
+export const workData = [
+        {
+            id: 1,
+            label: " Lorem ipsum dolor sit amet quia impedit adipisci ab doloribus?",
+        },
+        {
+            id: 2,
+            label: " Lorem ipsum dolor sit amet quia impedit adipisci ab doloribus?",
+        },
+
+    ]

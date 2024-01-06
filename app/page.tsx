@@ -1,5 +1,9 @@
 import Guide from "@/components/Guide";
 import Hero from "@/components/Hero";
+import Workers from "@/components/Workers/Workspace";
+
+
+
 import Link from "next/link";
 
 
@@ -9,7 +13,7 @@ export default function Home() {
       
        <Hero />
        <Guide type="content"/>
-       <section className="h-screen"></section>
+      <Workers />
        <Guide type="no" />
       <h2 className="text-4xl bg-yellow-50 text-black">
         <Link href="/posts">
