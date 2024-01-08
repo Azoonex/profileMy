@@ -1,13 +1,12 @@
 "use clinet"
-import { Button} from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
+import TypeButtonProps from '@/src/types/type'
 
-import TypeButtonProps  from '@/types/type'
-
-function Buttons({ lable, bgc , fase,icon }: TypeButtonProps) {
+function Buttons({ lable, bgc, fase, icon, hover }: TypeButtonProps) {
   return (
-      <Button bg={bgc} rightIcon={icon} colorScheme={fase} variant='outline'>
-          {lable} 
-      </Button>
+    <Button bg={bgc} _hover={{ zIndex:'20', transform: 'scale(1.1) ' }} rightIcon={icon} color={fase} variant='outline'>
+      {lable}
+    </Button>
   )
 }
 

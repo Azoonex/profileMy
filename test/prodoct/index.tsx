@@ -1,11 +1,11 @@
 import Link from "next/link"
 
-function ProductsList({ posts }) {
+function ProductsList({ posts }:any) {
     return (
         <div>
             <h2>list of posts</h2>
             <h2>
-                {posts.map(post => {
+                {posts.map((post:any) => {
                     return (
                         <div key={post.id}>
 

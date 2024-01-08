@@ -1,11 +1,11 @@
 import Link from "next/link"
 
-function PostList ({posts}) {
+function app({ posts }:any) {
     return(
         <div>
             <h2>list of posts</h2>
             <h2>
-                {posts.map(post=>{
+                {posts.map((post:any) =>{
                     return (
                         <div key={post.id}>
                             
@@ -22,7 +22,7 @@ function PostList ({posts}) {
     )
 }
 
-export default PostList
+export default app
 
 export async function getStaticProps() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
@@ -30,7 +30,7 @@ export async function getStaticProps() {
     console.log(data)
     return {
         props:{
-            posts: data
+            posts: data.slice(0,10)
         }
     }
 }

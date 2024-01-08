@@ -7,6 +7,6 @@ export const NAV_LINKS = [
 ];
 
 export const workData = {
-    label_1: " Lorem ipsum dolor sit amet quia impedit adipisci ab doloribus?",
-    label_2: " Lorem ipsum dolor sit amet quia impedit adipisci ab doloribus?"
+    label_1: " Lorem ipsum dolor sit amet  quia impedit adipisc",
+    label_2: " Lorem ipsum dolor sit ameti ab doloribus?",
 };

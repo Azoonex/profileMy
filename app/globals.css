@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 
+
+
 /* START: GENRAL STYLE */
 
 @layer base{
   h2{
-    font-size: 38px;
+    @apply text-[1.5rem]  lg:text-[2.9rem]
   }
   h3{
     font-size: 34px;

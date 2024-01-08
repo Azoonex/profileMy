@@ -5,5 +5,6 @@ export default interface TypeButtonProps {
     lable: string;
     fase: string;
     icon?: any;
-    bgc: string
+    bgc: string;
+    hover: string;
 }

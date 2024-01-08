@@ -1,9 +1,9 @@
 "use clinet";
 
-import React, { useRef } from 'react';
+// import { useRef } from 'react';
 import { HamburgerIcon, CloseIcon, ArrowForwardIcon } from '@chakra-ui/icons'
-import { motion } from "framer-motion"
-import { NAV_LINKS } from '@/constant';
+// import { motion } from "framer-motion"
+import { NAV_LINKS } from '@/src/constant';
 
 import {
     Drawer,
@@ -23,11 +23,11 @@ import Buttons from '../Buttons';
 
 export  function Sildbar() {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const btnRef = useRef()
+    // const btnRef = useRef < HTMLInputElement > (null)
 
     return (
         <>
-            <Button ref={btnRef} colorScheme='teal' onClick={onOpen} >
+            <Button  colorScheme='teal' onClick={onOpen} >
                     
                     {
                                 isOpen?<CloseIcon /> : <HamburgerIcon />
