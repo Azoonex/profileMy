@@ -1,11 +1,7 @@
 import { Hero, Guide, Workers, MyWork } from "@/components";
 
-
-
-import Link from "next/link";
-
-
 export default function Home() {
+
   return (
     <main className="bg__app">
       <Hero />

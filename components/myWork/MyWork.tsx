@@ -1,36 +1,39 @@
 "use client"
 import Image from "next/image"
-import motion from 'framer-motion'
 
 
 function MyWork() {
+
   return (
     <div
-    className="flex justify-around h-screen w-full  bg-blue-300">
-      <div className="flex w-[300px] items-center justify-strart">
-      <h2>text-center</h2> 
+    className="flex flex-col lg:gap-32 lg:flex-row justify-around h-[70vh]  w-full ">
+      <div
+
+      className="flex items-center justify-strart ">
+        <h2 className="lg:ml-7 
+         text-white w-32 font-extrabold py-7 lg:py-0 underline decoration-wavy decoration-blue-700">Trip Guid</h2> 
       </div>
-      <div className="relative w-full h-full  bg-red-700 ">
+      <div className="relative w-full h-full   ">
         <div className="bg-blue-300  w-1/2">
           <Image
             src="/tripguide.png"
             alt="not_found"
             width={1000}
-            height={1000}
+            height={1500}
           />
         </div>
         <div className="m-12">
          <h2 className="
-         font-bold text-2xl text-white outline-4
+         font-bold text-3xl text-white outline-4 underline
          ">
-          Lorem, ipsum dolor.
+          Shop Cars !
          </h2>
         </div>
 
         {/* absolute left car */}
-        <div className="bg-blue-300  w-1/2 top-1/4  h-full right-0 absolute  bottom-1/2 ">
+        <div className=" w-1/2 top-1/4  h-full right-0 absolute  bottom-1/2 ">
           <Image
-            className="rounded-t-2xl rounded-bl-3xl"
+            className="rounded-tl-2xl rounded-bl-3xl"
             src="/carrent.png"
             alt="not_found"
             width={1000}
