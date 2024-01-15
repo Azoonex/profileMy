@@ -2,7 +2,7 @@
 
 import Buttons from "./Buttons"
 import Image from "next/image"
-import {motion} from 'framer-motion'
+// import {motion} from 'framer-motion'
 
 
 function Hero() {
@@ -40,13 +40,13 @@ function Hero() {
         height={500}
         />
        </div>
-      <motion.h2
-        initial={{ x: 2000,opacity:1 }}
-        animate={{ x: -7000,opacity:0 }}
-        transition={{ duration: 40, delay: 3 }}
+      <h2
+        // initial={{ x: 2000,opacity:1 }}
+        // animate={{ x: -7000,opacity:0 }}
+        // transition={{ duration: 40, delay: 3 }}
         className="absolute text-[150px] opacity-60  text-current drop-shadow-[0_1.2px_1.2px_rgba(250,250,250)] font-bold bottom-0 w-[10000px]">
         Transforming ideas into captivating user interfaces. Passionate about crafting seamless experiences that blend innovation and elegance
-      </motion.h2>
+      </h2>
     </section>
   )
 }
