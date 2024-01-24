@@ -2,7 +2,7 @@
 
 // import { useRef } from 'react';
 import { HamburgerIcon, CloseIcon, ArrowForwardIcon } from '@chakra-ui/icons'
-// import { motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { NAV_LINKS } from '@/src/constant';
 
 import {
@@ -21,17 +21,17 @@ import Link from 'next/link';
 import Buttons from '../Buttons';
 
 
-export  function Sildbar() {
+export function Sildbar() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     // const btnRef = useRef < HTMLInputElement > (null)
 
     return (
         <>
-            <Button  colorScheme='teal' onClick={onOpen} >
-                    
-                    {
-                                isOpen?<CloseIcon /> : <HamburgerIcon />
-                    }
+            <Button colorScheme='yellow' onClick={onOpen} >
+
+                {
+                    isOpen ? <CloseIcon /> : <HamburgerIcon />
+                }
             </Button>
             <Drawer
                 isOpen={isOpen}
@@ -50,10 +50,10 @@ export  function Sildbar() {
                                 NAV_LINKS.map((item) => (
                                     <div key={item.id}>
                                         <Link
-                                        className='text-black  hover:text-white 
+                                            className='text-black  hover:text-white 
                                         duration-100
                                         hover:bg-blue-70 p-2 rounded-md '
-                                        href={item.href}>
+                                            href={item.href}>
                                             {item.label}
                                         </Link>
 
@@ -84,19 +84,24 @@ export  function Sildbar() {
 }
 
 
-export const NavLink:React.FC =()=>{
+export const NavLink: React.FC = () => {
     return (
         <ul className='flex gap-7'>
             {
-                NAV_LINKS.map((item)=>(
-                    <Link
-                    key={item.id}
-                        className='text-white font-bold hover:text-white 
+                NAV_LINKS.map((item) => (
+
+                    <motion.span
+                        whileHover={{ scale: 1.5 }}
+                    >
+                        <Link
+                            key={item.id}
+                            className='text-white font-bold hover:text-white 
                                         duration-100
                                         hover:bg-blue-70 p-2 rounded-md'
-                    href={item.href}>
-                    {item.label}
-                     </Link>
+                            href={item.href}>
+                            {item.label}
+                        </Link>
+                    </motion.span>
                 ))
             }
         </ul>

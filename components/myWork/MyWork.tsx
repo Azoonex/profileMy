@@ -12,7 +12,7 @@ function MyWork() {
   })
 
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"])
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "40%"])
 
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
 

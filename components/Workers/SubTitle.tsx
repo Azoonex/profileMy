@@ -1,16 +1,25 @@
 "use clinet"
 import { workData } from "@/src/constant"
+import Image from "next/image"
 
 function SubTitle() {
   
   return (
     <div className="">
-      <h3 className="text-yellow-50  hover:underline underline-offset-8 ">
+      <div className="absolute backdrop-filter rounded-full shadow-stone-300 shadow-2xl backdrop-blur-lg top-0 right-0 w-1/2 h-1/2  bg-black ">
+      <h3 className="text-yellow-50 uppercase m-3 -translate-x-28">
         {workData.label_1}
       </h3>
-      <h4 className="text-yellow-50 mt-4 text-center">
-        {workData.label_2}
-      </h4>
+      <ul className="m-3">
+        {
+          workData.skill.map((item)=>(
+            <li key={item.id} className=" text-yellow-50 group rounded-3xl cursor-help p-2 underline underline-offset-4 w-full hover:bg-red-500 hover:text-white">
+              {item.link} <span className="opacity-0  group-hover:opacity-100">{item.ispn}</span>
+            </li>
+          ))
+        }
+      </ul>
+      </div>
     </div>
   )
 }
@@ -21,24 +30,17 @@ export default SubTitle
 export const Card = ()=>{
   return(
     <div className="flex gap-20 rounded-md bg-white z-20">
+      <div className="relative flex justify-center h-[450px] w-[250px] shadow-xl shadow-amber-100 border-4 border-black rounded-2xl bg-gray-50">
+        <span className="border border-black bg-black w-28 h-5 rounded-br-xl rounded-bl-xl"></span>
 
-      <div
-        className="flex items-center  justify-center mx-auto flex-col relative max-w-[350px] w-full bg-gradient-to-br from-white to-[#c7fee9] min-h-[160px] rounded-3xl p-6 text-[#151a41]">
-        <div className="absolute -z-10 bg-yellow-50 h-[120%] w-[80%] rounded-xl"></div>
-
-        <h1 className="text-lg font-extrabold">Daniel Joffrion</h1>
-        <p className="block mt-1 mb-2 text-sm font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" className="inline-block" width="24" height="24" viewBox="0 0 24 24"
-            stroke-width="1.5" stroke="#151a41" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-          </svg>
-          Atlanta, Ga
-        </p>
-        <button className="rounded-full bg-[#151a41] text-white px-5 py-2 font-light text-sm my-8 transition-all duration-150 ease-in hover:bg-[#c6c9df] hover:text-[#151a41]">
-          View Content
-        </button>
+        <span className="absolute -right-2 top-20  border-4 border-black h-10 rounded-md"></span>
+        <span className="absolute -right-2 top-44  border-4 border-black h-24 rounded-md"></span>
+        <Image
+        src="/my-pc.jpg"
+        alt="not fond"
+        width={500}
+        height={500}
+        />
       </div>
     </div>
   )

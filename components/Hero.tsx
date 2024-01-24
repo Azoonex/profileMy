@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import Buttons from "./Buttons"
 import Image from "next/image"
 // import {motion} from 'framer-motion'
@@ -19,16 +20,20 @@ function Hero() {
         </h2>
         <div className="mt-4 flex items-center  gap-3">
             
-            <h5 className="text-white bg-transparent
+            <h5 className="text-white bg-transparent z-40
             border-2 border-white p-[5px] rounded-xl uppercase">
               front-end Developr
             </h5>
-          <Buttons
-            lable="CONECT_MY"
-            fase="#ECC94B"
-            bgc="RGBA(0, 0, 0, 0.22)"
-            hover="blue"
-          />
+          <Link
+          className="z-20"
+          href="/">
+            <Buttons
+              lable="CONECT_MY"
+              fase="#ECC94B"
+              bgc="RGBA(0, 0, 0, 0.22)"
+              hover="blue"
+            />
+          </Link>
        </div>
 
        </div>

@@ -1,6 +1,9 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { motion } from "framer-motion"
 
 const Footer = () => {
   return (
@@ -20,9 +23,11 @@ const Footer = () => {
           <div
             className="mx-auto rounded-lg font-black mt-5 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg"
           >
-            <button className="bg-tkb border text-sm text-white py-3 px-7 rounded-full" >
-              Join Sahilnetic
-            </button>
+            <motion.button
+            whileHover={{scale:1.5}}
+            className="bg-tkb border text-sm text-white py-3 px-7 rounded-full" >
+              AZOONEX
+            </motion.button>
           </div>
         </div>
       </section>

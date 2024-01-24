@@ -7,6 +7,17 @@ export const NAV_LINKS = [
 ];
 
 export const workData = {
-    label_1: " Lorem ipsum dolor sit amet  quia impedit adipisc",
+    label_1: "skill",
     label_2: " Lorem ipsum dolor sit ameti ab doloribus?",
+    skill: [
+        { id: 1, ispn: "expert", link: "HTML" },
+        { id: 2, ispn: "expert", link: "CSS" },
+        { id: 3, ispn: "expert", link: "JAVASCRIPT" },
+        { id: 4, ispn: "expert", link: "TYPESCRIPT" },
+        { id: 5, ispn: "expert", link: "REACT" },
+        { id: 6, ispn: "midle", link: "REDUXE" },
+        { id: 7, ispn: "midle", link: "THREE" },
+        { id: 8, ispn: "expert", link: "GIT" },
+    ],
 };
+
